@@ -1,7 +1,9 @@
+<p align="center">
 <img src="src/main/resources/icons/app-icon.png" alt="app-icon" width="120px">
+</p>
 
-# CodeWalker
-A desktop software for analyzing your source codes and projects, made with compose desktop (taken from [Tokei](https://github.com/XAMPPRocky/tokei) library)
+<h1 align="center">CodeWalker</h1>
+<h6 align="center">A desktop software for analyzing your source codes and projects, made with compose desktop (taken from <a href="https://github.com/XAMPPRocky/tokei">Tokei</a> library)</h6>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="linux" />
