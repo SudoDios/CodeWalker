@@ -2,3 +2,6 @@
 build/
 .idea
 src/main/core/target
+src/main/resources/libcore_code_walker.so
+src/main/resources/libcore_code_walker.dylib
+src/main/resources/core_code_walker.dll
