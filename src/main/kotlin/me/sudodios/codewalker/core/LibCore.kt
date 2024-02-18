@@ -80,13 +80,22 @@ object LibCore {
         }
     }
 
-    private val libName : String = "${Global.LIB_CORE_NAME}.${getLibExt()}"
+    private val libName : String = "${getLibName()}.${getLibExt()}"
     private fun getLibExt(): String? {
         val os = System.getProperty("os.name").lowercase()
         return when {
             os.contains("win") -> "dll"
             os.contains("nix") || os.contains("nux") || os.contains("aix") -> "so"
             os.contains("mac") -> "dylib"
+            else -> null
+        }
+    }
+
+    private fun getLibName(): String? {
+        val os = System.getProperty("os.name").lowercase()
+        return when {
+            os.contains("win") -> "core_code_walker"
+            os.contains("nix") || os.contains("nux") || os.contains("aix") || os.contains("mac") -> "libcore_code_walker"
             else -> null
         }
     }

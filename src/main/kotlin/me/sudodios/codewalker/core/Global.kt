@@ -4,8 +4,6 @@ import androidx.compose.runtime.mutableStateOf
 
 object Global {
 
-    const val LIB_CORE_NAME = "libcore_code_walker"
-
     val userHome : String get() = System.getProperty("user.home")
     val LIB_CORE_PATH = "${userHome}/.codeWalker"
     val DB_CORE_PATH = "${userHome}/.codeWalker"

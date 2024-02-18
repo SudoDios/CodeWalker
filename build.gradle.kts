@@ -22,6 +22,12 @@ fun getLibExt () : String = when {
     else -> ""
 }
 
+fun getLibName () : String = when {
+    Os.isFamily(Os.FAMILY_WINDOWS) -> "core_code_walker"
+    Os.isFamily(Os.FAMILY_UNIX) || Os.isFamily(Os.FAMILY_MAC)  -> "libcore_code_walker"
+    else -> ""
+}
+
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
     kotlinOptions {
         jvmTarget = "17"
@@ -35,7 +41,7 @@ tasks.register("buildCore") {
     }
     doLast {
         copy {
-            from("src/main/core/target/release/libcore_code_walker.${getLibExt()}")
+            from("src/main/core/target/release/${getLibName()}.${getLibExt()}")
             into("src/main/resources")
         }
     }
