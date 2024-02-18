@@ -27,14 +27,14 @@
 > You can download for linux (tested on ubuntu 20,22) & windows (tested on 10,11) from [Releases Page](https://github.com/SudoDios/CodeWalker/releases)
 
 ### 🔧 Build
-> 1. install rust-lang correctly on your device
+> - Install rust-lang correctly on your device
 >
->     note : on windows you need to install visual studio c++ build tools
-> 2. install jdk version 17 on your device
-> 3. git clone the [project](https://github.com/SudoDios/CodeWalker.git) on your device
-> 4. cd CodeWalker
-> 5. ./gradlew run
-> 6. gradle automatically build all dependencies
+>     `note : on windows you need to install visual studio c++ build tools`
+> - Install jdk version 17 on your device
+> - `git clone` the [project](https://github.com/SudoDios/CodeWalker.git) on your device
+> - `cd CodeWalker`
+> - `./gradlew run`
+> - Gradle automatically build all dependencies
 
 ## 🧾 License
 Copyright (C) 2023 SudoDios
