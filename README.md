@@ -12,13 +12,21 @@
 <img src="https://img.shields.io/badge/OpenJDK-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="openjdk" />
 </p>
 
-### Screenshot
+### 📷 Screenshot
 <img src="screen-shot.png" alt="screenshot">
 
-### Installation
+### 🚀 Features
+> - Super fast (based on [Tokei](https://github.com/XAMPPRocky/tokei) library written in Rust)
+> - Count all project line of codes 
+> - Supporting over 150 languages, and their various extensions
+> - Size of project on your device disk
+> - You can search in founded languages
+> - You can sort by line of file,codes,comments,blanks
+
+### 📥 Installation
 > You can download for linux (tested on ubuntu 20,22) & windows (tested on 10,11) from [Releases Page](https://github.com/SudoDios/CodeWalker/releases)
 
-### Build
+### 🔧 Build
 > 1. install rust-lang correctly on your device
 >
 >     note : on windows you need to install visual studio c++ build tools
@@ -27,3 +35,7 @@
 > 4. cd CodeWalker
 > 5. ./gradlew run
 > 6. gradle automatically build all dependencies
+
+## 🧾 License
+Copyright (C) 2023 SudoDios
+http://www.apache.org/licenses/LICENSE-2.0
