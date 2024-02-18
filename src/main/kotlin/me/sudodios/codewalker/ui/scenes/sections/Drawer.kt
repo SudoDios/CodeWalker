@@ -32,6 +32,7 @@ import me.sudodios.codewalker.ui.dialogs.FolderPickerDialog
 import me.sudodios.codewalker.ui.scenes.MainScreen
 import me.sudodios.codewalker.ui.theme.ColorTheme
 import me.sudodios.codewalker.utils.Utils.toColorInt
+import java.io.File
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -102,7 +103,7 @@ fun Drawer(
         onSelectFolder = {
             showQuickFolderPicker = false
             LibCore.getStats(
-                projectName = it.substringAfterLast("/"),
+                projectName = it.substringAfterLast(File.separator),
                 projectFolders = arrayListOf(it),
                 ignored = arrayListOf(),
                 hidden = false,
